@@ -1,0 +1,40 @@
+body {
+  background: #d3c1c1;
+  color: #232121;
+  }
+  
+.bg-black {
+    background: #000;
+  }
+  
+.card-project:hover {
+    border: 2px solid #eee;
+    cursor: pointer;
+  }
+
+.navbar {
+    background: #50935d;
+  }
+
+.navbar ul {
+    color: #4b4747;
+  }
+
+.navbar ul li {
+    color: #4b4747;
+  }
+
+.navbar ul li a {
+    color: #4b4747;
+  }
+
+.navbar a {
+    color: #4b4747;
+    text-decoration: none;
+  }
+
+  .navbar ul li a:hover {
+    color: #4c7b9d;
+  }
+
+

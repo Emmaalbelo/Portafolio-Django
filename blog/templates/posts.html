@@ -1,0 +1,25 @@
+{% extends 'layout.html' %} 
+
+{% block content %}
+
+
+<h1>Posts</h1>
+
+
+{% for post in posts%}
+
+<h2>{{post.title}}</h2>
+<p> {{post.description|striptags|truncatechars:100}}</p>  
+<p> {{post.date|date:'M d Y'|upper}} </p>  
+<img src= '{{post.image.url}}' alt ='{{post.title}}' class="img-fluid" class= 'text-light'>
+
+<a href="{% url 'blog:post_detail' post.id %}">{{post.title}}</a>
+
+
+{%endfor%}
+
+{% endblock %}
+
+<!-- truncatechars: muestra la cantidad de caracteres indicada -->
+<!-- striptags: quita las etiquetas del texto y las interpreta como un string -->
+<!-- safe: interpreta html -->
